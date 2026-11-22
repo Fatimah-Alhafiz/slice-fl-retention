@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+data/*
+!data/README.md
+src/results_*/
