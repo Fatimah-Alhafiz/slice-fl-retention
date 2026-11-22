@@ -1,0 +1,12 @@
+check,result,detail
+RQ3a: single-update MIA falls as B grows,PASS,"Spearman=-0.97, p=1.1e-36, n=60"
+RQ3b B=4: aggregated MIA higher at K=4 than K=1,FAIL,"diff=-0.005 [-0.014, 0.002]"
+RQ3b B=8: aggregated MIA higher at K=4 than K=1,FAIL,"diff=0.003 [-0.001, 0.005]"
+RQ3b B=16: aggregated MIA higher at K=4 than K=1,PASS,"diff=0.006 [0.004, 0.009]"
+RQ3b B=32: aggregated MIA higher at K=4 than K=1,FAIL,"diff=-0.000 [-0.004, 0.004]"
+"Utility: at equal rounds (19), accuracy rises with B (K=1)",PASS,"Spearman=0.90, p=7.1e-08"
+"Utility: at equal data, accuracy rises with B (K=1)",FAIL,"Spearman=-0.88, p=4.1e-07  (FAIL expected: fewer rounds)"
+Inversion beats random guessing,PASS,"gain=0.528 [0.489, 0.567]"
+RQ2 (burst): timer max exposure > amount max in every cell,PASS,
+RQ2 (variable): timer max exposure > amount max in every cell,PASS,
+RQ2: steady-state model error < 10 %,PASS,mean relative error = 0.046
